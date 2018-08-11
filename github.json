@@ -293,31 +293,37 @@
       }
     },
     "permissions": {
-      "admin": {
-        "type": "boolean"
-      },
-      "push": {
-        "type": "boolean"
-      },
-      "pull": {
-        "type": "boolean"
+      "type": "object",
+      "properties": {
+        "admin": {
+          "type": "boolean"
+        },
+        "push": {
+          "type": "boolean"
+        },
+        "pull": {
+          "type": "boolean"
+        }
       }
     },
     "license": {
-      "key": {
-        "type": "string"
-      },
-      "name": {
-        "type": "string"
-      },
-      "spdx_id": {
-        "type": "string"
-      },
-      "url": {
-        "type": "string"
-      },
-      "node_id": {
-        "type": "string"
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "spdx_id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "node_id": {
+          "type": "string"
+        }
       }
     }
   }
