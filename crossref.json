@@ -1,0 +1,243 @@
+{
+    "id": "https://github.com/share-research/api-schemas/crossref.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Crossref Work",
+    "description": "The Crossref API format for a single work",
+    "required": [],
+    "type": "object",
+    "properties": {
+        "status": {
+            "type": "string"
+        },
+        "messsage-type": {
+            "type": "string"
+        },
+        "message-version": {
+            "type": "string"
+        },
+        "message": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "indexed": {
+                        "$ref": "#/definitions/datetime"
+                    },
+                    "reference-count": {
+                        "type": "number"
+                    },
+                    "publisher": {
+                        "type": "string"
+                    },
+                    "issue": {
+                        "type": "string"
+                    },
+                    "content-domain": {
+                        "type": "object",
+                        "properties": {
+                            "domain": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "crossmark-restriction": {
+                                    "type": "boolean"
+                                }
+                            }
+                        }
+                    },
+                    "short-container-title": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "DOI": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "created": {
+                        "$ref": "#/definitions/datetime"
+                    },
+                    "page": {
+                        "type": "string"
+                    },
+                    "source": {
+                        "type": "string"
+                    },
+                    "is-referenced-by-count": {
+                        "type": "number"
+                    },
+                    "title": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "prefix": {
+                        "type": "string"
+                    },
+                    "volume": {
+                        "type": "string"
+                    },
+                    "author": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "given": {
+                                    "type": "string"
+                                },
+                                "family": {
+                                    "type": "string"
+                                },
+                                "sequence": {
+                                    "type": "string"
+                                },
+                                "affiliation": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "member": {
+                        "type": "string"
+                    },
+                    "published-online": {
+                        "$ref": "#/definitions/datetime"
+                    },
+                    "container-title": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "original-title": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "language": {
+                        "type": "string"
+                    },
+                    "link": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "URL": {
+                                    "type": "string"
+                                },
+                                "content-type": {
+                                    "type": "string"
+                                },
+                                "content-version": {
+                                    "type": "string"
+                                },
+                                "intended-application": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "deposited": {
+                        "$ref": "#/definitions/datetime"
+                    },
+                    "score": {
+                        "type": "number"
+                    },
+                    "subtitle": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "short-title": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "references-count": {
+                        "type": "number"
+                    },
+                    "journal-issue": {
+                        "type": "object",
+                        "properties": {
+                            "published-online": {
+                                "type": "object",
+                                "properties": {
+                                    "date-parts": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "number"
+                                        }
+                                    }
+                                }
+                            },
+                            "issue": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "alternative-id": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "URL": {
+                        "type": "string"
+                    },
+                    "relation": {
+                        "type": "object"
+                    },
+                    "ISSN": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "issn-type": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "datetime": {
+            "type": "object",
+            "properties": {
+                "date-parts": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "date-time": {
+                    "type": "string"
+                },
+                "timestamp": {
+                    "type": "number"
+                }
+            }
+        }
+    }
+}
