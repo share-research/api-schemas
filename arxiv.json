@@ -1,0 +1,259 @@
+{
+    "id": "https://github.com/share-research/api-schemas/arxiv.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "arXiv Work",
+    "description": "The arXiv API format for a single work",
+    "required": [],
+    "type": "object",
+    "properties": {
+        "feed": {
+            "type": "object",
+            "properties": {
+                "-xmlns": {
+                    "type": "string"
+                },
+                "-xmlns:opensearch": {
+                    "type": "string"
+                },
+                "-xmlns:arxiv": {
+                    "type": "string"
+                },
+                "link": {
+                    "type": "object",
+                    "properties": {
+                        "-xlmns": {
+                            "type": "string"
+                        },
+                        "-href": {
+                            "type": "string"
+                        },
+                        "-rel": {
+                            "type": "string"
+                        },
+                        "-type": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "title": {
+                    "type": "object",
+                    "properties": {
+                        "-xmlns": {
+                            "type": "string"
+                        },
+                        "#text": {
+                            "type": ""
+                        }
+                    }
+                },
+                "id": {
+                    "type": "object",
+                    "properties": {
+                        "-xmlns": {
+                            "type": "string"
+                        },
+                        "#text": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "updated": {
+                    "type": "object",
+                    "properties": {
+                        "-xmlns": {
+                            "type": "string"
+                        },
+                        "#text": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "opensearch:totalResults": {
+                    "type": "object",
+                    "properties": {
+                        "-xmlns": {
+                            "type": "string"
+                        },
+                        "#text": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "opensearch:startIndex": {
+                    "type": "object",
+                    "properties": {
+                        "-xmlns": {
+                            "type": "string"
+                        },
+                        "#text": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "opensearch:itemsPerPage": {
+                    "type": "object",
+                    "properties": {
+                        "-xmlns": {
+                            "type": "string"
+                        },
+                        "#text": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "entry": {
+                    "type": "object",
+                    "properties": {
+                        "-xmlns": {
+                            "type": "string"
+                        },
+                        "-xmlns:arxiv": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "object",
+                            "properties": {
+                                "-xmlns": {
+                                    "type": "string"
+                                },
+                                "#text": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "published": {
+                            "type": "object",
+                            "properties": {
+                                "-xmlns": {
+                                    "type": "string"
+                                },
+                                "#text": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "updated": {
+                            "type": "object",
+                            "properties": {
+                                "-xmlns": {
+                                    "type": "string"
+                                },
+                                "#text": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "title": {
+                            "type": "object",
+                            "properties": {
+                                "-xmlns": {
+                                    "type": "string"
+                                },
+                                "#text": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "summary": {
+                            "type": "object",
+                            "properties": {
+                                "-xmlns": {
+                                    "type": "string"
+                                },
+                                "#text": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "author": {
+                            "type": "object",
+                            "properties": {
+                                "-xmlns": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "object",
+                                    "properties": {
+                                        "-xmlns": {
+                                            "type": "string"
+                                        },
+                                        "#text": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "arxiv:comment": {
+                            "type": "object",
+                            "properties": {
+                                "-xmlns": {
+                                    "type": "string"
+                                },
+                                "#text": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "arxiv:journal_ref": {
+                            "type": "object",
+                            "properties": {
+                                "-xmlns": {
+                                    "type": "string"
+                                },
+                                "#text": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "link": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "-xlmns": {
+                                        "type": "string"
+                                    },
+                                    "-href": {
+                                        "type": "string"
+                                    },
+                                    "-rel": {
+                                        "type": "string"
+                                    },
+                                    "-type": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "arxiv:primary_category": {
+                            "type": "object",
+                            "properties": {
+                                "-xmlns:arxiv": {
+                                    "type": "string"
+                                },
+                                "-term": {
+                                    "type": "string"
+                                },
+                                "-scheme": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "category": {
+                            "type": "object",
+                            "properties": {
+                                "-term": {
+                                    "type": "string"
+                                },
+                                "-scheme": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
