@@ -1,0 +1,424 @@
+{
+  "id": "https://github.com/share-research/api-schemas/github.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Github Repository",
+  "description": "The Github APIv3 representation of a repository",
+  "required": [],
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number",
+      "description": "Unique identifier."
+    },
+    "node_id": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the repository."
+    },
+    "full_name": {
+      "type": "string",
+      "description": "Name of the repository prefixed with the owner/organization."
+    },
+    "owner": {
+      "$ref": "#/definitions/owner",
+      "description": "Owner of the repository."
+    },
+    "private": {
+      "type": "boolean",
+      "description": "Whether or not other users have read access by default."
+    },
+    "html_url": {
+      "type": "string",
+      "description": "HTTP link to the repository's landing page on github."
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the repository."
+    },
+    "fork": {
+      "type": "boolean",
+      "description": "Whether or not the repository is a fork of another repository."
+    },
+    "url": {
+      "type": "string",
+      "description": "API link to the repository data."
+    },
+    "archive_url": {
+      "type": "string",
+      "description": "API link to archived, compressed repository contents."
+    },
+    "assignees_url": {
+      "type": "string",
+      "description": "API link to the available assignees for issues in a repository."
+    },
+    "blobs_url": {
+      "type": "string",
+      "description": "API link to list of blobs (Binary Large OBjects) attached to the repository."
+    },
+    "branches_url": {
+      "type": "string",
+      "description": "API link to list of branches in the repository."
+    },
+    "collaborators_url": {
+      "type": "string",
+      "description": "API link to list of collaborators for the repository."
+    },
+    "comments_url": {
+      "type": "string",
+      "description": "API link to list of comments that have been made on various commits and branches of this repository."
+    },
+    "commits_url": {
+      "type": "string",
+      "description": "API link to list of commits on all branches of the repository."
+    },
+    "compare_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "contents_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "contributors_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "deployments_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "downloads_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "events_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "forks_url": {
+      "type": "number",
+      "description": "TODO."
+    },
+    "git_commits_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "git_refs_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "git_tags_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "git_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "issue_comment_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "issue_events_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "issues_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "keys_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "labels_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "languages_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "merges_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "milestones_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "notifications_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "pulls_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "releases_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "ssh_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "stargazers_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "statuses_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "subscribers_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "subscription_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "tags_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "teams_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "trees_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "clone_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "mirror_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "hooks_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "svn_url": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "homepage": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "language": {
+      "type": "string",
+      "description": "TODO."
+    },
+    "forks_count": {
+      "type": "number",
+      "description": "TODO."
+    },
+    "stargazers_count": {
+      "type": "number",
+      "description": "TODO."
+    },
+    "watchers_count": {
+      "type": "boolean",
+      "description": "TODO."
+    },
+    "size": {
+      "type": "boolean",
+      "description": "TODO."
+    },
+    "default_branch": {
+      "type": "string",
+        "description": "TODO."
+    },
+    "open_issues_count": {
+      "type": "number"
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "TODO."
+      }
+    },
+    "has_issues": {
+      "type": "boolean"
+    },
+    "has_projects": {
+      "type": "boolean",
+      "description": "Whether or not the repository has any projects attached to it."
+    },
+    "has_wiki": {
+      "type": "boolean",
+      "description": "Whether or not the repository has a wiki."
+    },
+    "has_pages": {
+      "type": "boolean",
+      "description": "Whether or not the repository has a Github Pages presence."
+    },
+    "has_downloads": {
+      "type": "boolean",
+      "description": "TODO"
+    },
+    "archived": {
+      "type": "boolean",
+      "description": "Whether or not the repository has been archived (i.e. the code has been completely frozen)."
+    },
+    "pushed_at": {
+      "type": "date-time",
+      "description": "When the repository was originally posted to github."
+    },
+    "created_at": {
+      "type": "date-time",
+      "description": "When the repository was originally created according to its git history."
+    },
+    "updated_at": {
+      "type": "date-time",
+      "description": "The timestamp for the most recent commit."
+    },
+    "permissions": {
+      "$ref": "#/definitions/permissions"
+    },
+    "allow_rebase_merge": {
+      "type": "boolean",
+      "description": "TODO."
+    },
+    "allow_squash_merge": {
+      "type": "boolean",
+      "description": "TODO."
+    },
+    "allow_merge_commit": {
+      "type": "boolean",
+      "description": "TODO."
+    },
+    "subscribers_count": {
+      "type": "number",
+      "description": "The number of users subscribed to this repository."
+    },
+    "network_count": {
+      "type": "number",
+      "description": "TODO."
+    },
+    "license": {
+      "$ref": "#/definitions/license"
+    }
+  },
+  "definitions": {
+    "owner": {
+      "login": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "id": {
+        "type": "number",
+        "description": "TODO."
+      },
+      "node_id": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "avatar_url": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "gravatar_id": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "url": {
+        "type": "string",
+        "description": "Link to API detail page for user."
+      },
+      "html_url": {
+        "type": "string",
+        "description": "Link to user profile on github website."
+      },
+      "followers_url": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "following_url": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "gists_url": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "starred_url": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "organizations_url": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "repos_url": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "events_url": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "received_events_url": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "type": {
+        "type": "string",
+        "description": "TODO."
+      },
+      "site_admin": {
+        "type": "boolean",
+        "description": "TODO."
+      }
+    },
+    "permissions": {
+      "type": "object",
+      "properties": {
+        "admin": {
+          "type": "boolean"
+        },
+        "push": {
+          "type": "boolean"
+        },
+        "pull": {
+          "type": "boolean"
+        }
+      }
+    },
+    "license": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "TODO."
+        },
+        "name": {
+          "type": "string",
+          "description": "TODO."
+        },
+        "spdx_id": {
+          "type": "string",
+          "description": "TODO."
+        },
+        "url": {
+          "type": "string",
+          "description": "TODO."
+        },
+        "node_id": {
+          "type": "string",
+          "description": "TODO."
+        }
+      }
+    }
+  }
+}

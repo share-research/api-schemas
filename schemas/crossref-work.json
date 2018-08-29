@@ -7,13 +7,16 @@
     "type": "object",
     "properties": {
         "status": {
-            "type": "string"
+            "type": "string",
+            "description": "TODO."
         },
-        "messsage-type": {
-            "type": "string"
+        "message-type": {
+            "type": "string",
+            "description": "TODO."
         },
         "message-version": {
-            "type": "string"
+            "type": "string",
+            "description": "TODO."
         },
         "message": {
             "type": "object",
@@ -23,196 +26,255 @@
                         "$ref": "#/definitions/datetime"
                     },
                     "reference-count": {
-                        "type": "number"
+                        "type": "number",
+                        "description": "TODO."
                     },
                     "publisher": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     },
                     "issue": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     },
                     "content-domain": {
                         "type": "object",
                         "properties": {
                             "domain": {
                                 "type": "array",
+                                "description": "TODO.",
                                 "items": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "crossmark-restriction": {
-                                    "type": "boolean"
+                                    "type": "boolean",
+                                    "description": "TODO."
                                 }
                             }
                         }
                     },
                     "short-container-title": {
                         "type": "array",
+                        "description": "TODO.",
                         "items": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     },
                     "DOI": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     },
                     "type": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     },
                     "created": {
                         "$ref": "#/definitions/datetime"
                     },
                     "page": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     },
                     "source": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     },
                     "is-referenced-by-count": {
-                        "type": "number"
+                        "type": "number",
+                        "description": "TODO."
                     },
                     "title": {
                         "type": "array",
+                        "description": "TODO.",
                         "items": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     },
                     "prefix": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     },
                     "volume": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     },
                     "author": {
                         "type": "array",
+                        "description": "TODO.",
                         "items": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "given": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "family": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "sequence": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "affiliation": {
                                     "type": "array",
+                                    "description": "TODO.",
                                     "items": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "description": "TODO."
                                     }
                                 }
                             }
                         }
                     },
                     "member": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     },
                     "published-online": {
-                        "$ref": "#/definitions/datetime"
+                        "$ref": "#/definitions/datetime",
+                        "description": "TODO."
                     },
                     "container-title": {
                         "type": "array",
+                        "description": "TODO.",
                         "items": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     },
                     "original-title": {
                         "type": "array",
+                        "description": "TODO.",
                         "items": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     },
                     "language": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     },
                     "link": {
                         "type": "array",
+                        "description": "TODO.",
                         "items": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "URL": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "content-type": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "content-version": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "intended-application": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 }
                             }
                         }
                     },
                     "deposited": {
-                        "$ref": "#/definitions/datetime"
+                        "$ref": "#/definitions/datetime",
+                        "description": "TODO."
                     },
                     "score": {
-                        "type": "number"
+                        "type": "number",
+                        "description": "TODO."
                     },
                     "subtitle": {
                         "type": "array",
+                        "description": "TODO.",
                         "items": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     },
                     "short-title": {
                         "type": "array",
+                        "description": "TODO.",
                         "items": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     },
                     "references-count": {
-                        "type": "number"
+                        "type": "number",
+                        "description": "TODO."
                     },
                     "journal-issue": {
                         "type": "object",
+                        "description": "TODO.",
                         "properties": {
                             "published-online": {
                                 "type": "object",
+                                "description": "TODO.",
                                 "properties": {
                                     "date-parts": {
                                         "type": "array",
+                                        "description": "TODO.",
                                         "items": {
-                                            "type": "number"
+                                            "type": "number",
+                                            "description": "TODO."
                                         }
                                     }
                                 }
                             },
                             "issue": {
-                                "type": "string"
+                                "type": "string",
+                                "description": "TODO."
                             }
                         }
                     },
                     "alternative-id": {
                         "type": "array",
+                        "description": "TODO.",
                         "items": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     },
                     "URL": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     },
                     "relation": {
-                        "type": "object"
+                        "type": "object",
+                        "description": "TODO."
                     },
                     "ISSN": {
                         "type": "array",
+                        "description": "TODO.",
                         "items": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     },
                     "issn-type": {
                         "type": "array",
+                        "description": "TODO."
                         "items": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "value": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "type": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 }
                             }
                         }
@@ -224,18 +286,23 @@
     "definitions": {
         "datetime": {
             "type": "object",
+            "description": "TODO.",
             "properties": {
                 "date-parts": {
                     "type": "array",
+                    "description": "TODO.",
                     "items": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "TODO."
                     }
                 },
                 "date-time": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "TODO."
                 },
                 "timestamp": {
-                    "type": "number"
+                    "type": "number",
+                    "description": "TODO."
                 }
             }
         }

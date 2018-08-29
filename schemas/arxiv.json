@@ -8,138 +8,177 @@
     "properties": {
         "feed": {
             "type": "object",
+            "description": "TODO.",
             "properties": {
                 "-xmlns": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "TODO."
                 },
                 "-xmlns:opensearch": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "TODO."
                 },
                 "-xmlns:arxiv": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "TODO."
                 },
                 "link": {
                     "type": "object",
+                    "description": "TODO.",
                     "properties": {
                         "-xlmns": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         },
                         "-href": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         },
                         "-rel": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         },
                         "-type": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     }
                 },
                 "title": {
                     "type": "object",
+                    "description": "TODO.",
                     "properties": {
                         "-xmlns": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         },
                         "#text": {
-                            "type": ""
+                            "type": "string",
+                            "description": "TODO."
                         }
                     }
                 },
                 "id": {
                     "type": "object",
+                    "description": "TODO.",
                     "properties": {
                         "-xmlns": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         },
                         "#text": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     }
                 },
                 "updated": {
                     "type": "object",
+                    "description": "TODO.",
                     "properties": {
                         "-xmlns": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         },
                         "#text": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     }
                 },
                 "opensearch:totalResults": {
                     "type": "object",
+                    "description": "TODO.",
                     "properties": {
                         "-xmlns": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         },
                         "#text": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     }
                 },
                 "opensearch:startIndex": {
                     "type": "object",
+                    "description": "TODO.",
                     "properties": {
                         "-xmlns": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         },
                         "#text": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     }
                 },
                 "opensearch:itemsPerPage": {
                     "type": "object",
+                    "description": "TODO.",
                     "properties": {
                         "-xmlns": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         },
                         "#text": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         }
                     }
                 },
                 "entry": {
                     "type": "object",
+                    "description": "TODO.",
                     "properties": {
                         "-xmlns": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         },
                         "-xmlns:arxiv": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "TODO."
                         },
                         "id": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "-xmlns": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "#text": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 }
                             }
                         },
                         "published": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "-xmlns": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "#text": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 }
                             }
                         },
                         "updated": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "-xmlns": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "#text": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 }
                             }
                         },
@@ -156,29 +195,37 @@
                         },
                         "summary": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "-xmlns": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "#text": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 }
                             }
                         },
                         "author": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "-xmlns": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "name": {
                                     "type": "object",
+                                    "description": "TODO.",
                                     "properties": {
                                         "-xmlns": {
-                                            "type": "string"
+                                            "type": "string",
+                                            "description": "TODO."
                                         },
                                         "#text": {
-                                            "type": "string"
+                                            "type": "string",
+                                            "description": "TODO."
                                         }
                                     }
                                 }
@@ -186,68 +233,87 @@
                         },
                         "arxiv:comment": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "-xmlns": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "#text": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 }
                             }
                         },
                         "arxiv:journal_ref": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "-xmlns": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "#text": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 }
                             }
                         },
                         "link": {
                             "type": "array",
+                            "description": "TODO.",
                             "items": {
                                 "type": "object",
+                                "description": "TODO.",
                                 "properties": {
                                     "-xlmns": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "description": "TODO."
                                     },
                                     "-href": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "description": "TODO."
                                     },
                                     "-rel": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "description": "TODO."
                                     },
                                     "-type": {
-                                        "type": "string"
+                                        "type": "string",
+                                        "description": "TODO."
                                     }
                                 }
                             }
                         },
                         "arxiv:primary_category": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "-xmlns:arxiv": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "-term": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "-scheme": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 }
                             }
                         },
                         "category": {
                             "type": "object",
+                            "description": "TODO.",
                             "properties": {
                                 "-term": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 },
                                 "-scheme": {
-                                    "type": "string"
+                                    "type": "string",
+                                    "description": "TODO."
                                 }
                             }
                         }
