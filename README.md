@@ -13,7 +13,7 @@ A collection of JSON Schemas for validation of common and high-traffic APIs.
 - [x] Github
 - [x] Crossref
 - [x] arXiv
-- [ ] Datacite
+- [x] Datacite
 - [ ] Dryad
 
 ## To Test
