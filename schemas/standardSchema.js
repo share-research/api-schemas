@@ -20,7 +20,7 @@ let arxivMapping = {
   }
 }
 
-let arxivMapping = {
+let dataciteMapping = {
     'title': {
         from: 'titles'
     },
