@@ -1,0 +1,262 @@
+{
+    "data": {
+        "type": "object",
+        "required": [
+            "@id",
+            "@type"
+        ],
+        "additionalProperties": false,
+        "properties": {
+            "extra": {
+                "type": "object"
+            },
+            "@type": {
+                "type": "string"
+            },
+            "@id": {
+                "type": [
+                    "integer",
+                    "string"
+                ]
+            },
+            "title": {
+                "type": "string",
+                "description": "Text"
+            },
+            "description": {
+                "type": "string",
+                "description": "Text"
+            },
+            "is_deleted": {
+                "type": "boolean",
+                "description": "Boolean (Either True or False)"
+            },
+            "date_published": {
+                "type": "string",
+                "description": "Date (with time)"
+            },
+            "date_updated": {
+                "type": "string",
+                "description": "Date (with time)"
+            },
+            "free_to_read_type": {
+                "type": "string",
+                "description": "URL",
+                "format": "uri"
+            },
+            "free_to_read_date": {
+                "type": "string",
+                "description": "Date (with time)"
+            },
+            "rights": {
+                "type": "string",
+                "description": "Text"
+            },
+            "language": {
+                "type": "string",
+                "description": "Text"
+            },
+            "subjects": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "description": "Many-to-many relationship",
+                    "required": [
+                        "@id",
+                        "@type"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "@id": {
+                            "type": [
+                                "string",
+                                "integer"
+                            ]
+                        },
+                        "@type": {
+                            "enum": [
+                                "THROUGHSUBJECTS",
+                                "ThroughSubjects",
+                                "throughsubjects"
+                            ]
+                        }
+                    }
+                }
+            },
+            "tags": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "description": "Many-to-many relationship",
+                    "required": [
+                        "@id",
+                        "@type"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "@id": {
+                            "type": [
+                                "string",
+                                "integer"
+                            ]
+                        },
+                        "@type": {
+                            "enum": [
+                                "THROUGHTAGS",
+                                "ThroughTags",
+                                "throughtags"
+                            ]
+                        }
+                    }
+                }
+            },
+            "related_agents": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "description": "Many-to-many relationship",
+                    "required": [
+                        "@id",
+                        "@type"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "@id": {
+                            "type": [
+                                "string",
+                                "integer"
+                            ]
+                        },
+                        "@type": {
+                            "enum": [
+                                "AGENTWORKRELATION",
+                                "AgentWorkRelation",
+                                "CONTRIBUTOR",
+                                "CREATOR",
+                                "Contributor",
+                                "Creator",
+                                "FUNDER",
+                                "Funder",
+                                "HOST",
+                                "Host",
+                                "PRINCIPALINVESTIGATOR",
+                                "PRINCIPALINVESTIGATORCONTACT",
+                                "PUBLISHER",
+                                "PrincipalInvestigator",
+                                "PrincipalInvestigatorContact",
+                                "Publisher",
+                                "agentworkrelation",
+                                "contributor",
+                                "creator",
+                                "funder",
+                                "host",
+                                "principalinvestigator",
+                                "principalinvestigatorcontact",
+                                "publisher"
+                            ]
+                        }
+                    }
+                }
+            },
+            "related_works": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "description": "Many-to-many relationship",
+                    "required": [
+                        "@id",
+                        "@type"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "@id": {
+                            "type": [
+                                "string",
+                                "integer"
+                            ]
+                        },
+                        "@type": {
+                            "enum": [
+                                "CITES",
+                                "COMPILES",
+                                "CORRECTS",
+                                "Cites",
+                                "Compiles",
+                                "Corrects",
+                                "DISCUSSES",
+                                "DISPUTES",
+                                "DOCUMENTS",
+                                "Discusses",
+                                "Disputes",
+                                "Documents",
+                                "EXTENDS",
+                                "Extends",
+                                "ISDERIVEDFROM",
+                                "ISPARTOF",
+                                "ISSUPPLEMENTTO",
+                                "IsDerivedFrom",
+                                "IsPartOf",
+                                "IsSupplementTo",
+                                "REFERENCES",
+                                "REPLIESTO",
+                                "RETRACTS",
+                                "REVIEWS",
+                                "References",
+                                "RepliesTo",
+                                "Retracts",
+                                "Reviews",
+                                "USESDATAFROM",
+                                "UsesDataFrom",
+                                "WORKRELATION",
+                                "WorkRelation",
+                                "cites",
+                                "compiles",
+                                "corrects",
+                                "discusses",
+                                "disputes",
+                                "documents",
+                                "extends",
+                                "isderivedfrom",
+                                "ispartof",
+                                "issupplementto",
+                                "references",
+                                "repliesto",
+                                "retracts",
+                                "reviews",
+                                "usesdatafrom",
+                                "workrelation"
+                            ]
+                        }
+                    }
+                }
+            },
+            "identifiers": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "description": "",
+                    "required": [
+                        "@id",
+                        "@type"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "@id": {
+                            "type": [
+                                "string",
+                                "integer"
+                            ]
+                        },
+                        "@type": {
+                            "enum": [
+                                "WORKIDENTIFIER",
+                                "WorkIdentifier",
+                                "workidentifier"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
