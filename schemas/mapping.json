@@ -1,0 +1,164 @@
+{
+    
+    "schema": {
+        "properties": {
+            "title": {
+                "type": "string",
+                "_mapping": "arxiv:*.title"
+            },
+            "authors": {
+                "type": "array",
+                "items": [{
+                    "type": "object",
+                    "properties": {
+                        "family": {
+                            "type": "string",
+                            "_mapping": {
+                                "arxiv": {
+                                  "from": "feed.entry.author.name[]",
+                                  "transformations": [
+                                      "http://gh/{hash}/api/standardNameSplitter/?last",
+                                },
+                                "dryad": {
+                                    "from": "authorNames",
+                                    "transformations": [
+                                        {
+                                            "task/transform": "http://share/splitter",
+                                            "version": ,
+                                            args: {
+                                                "delimiter": "[,;]"
+                                            },
+                                            output: array
+                                        },
+                                        {
+                                            task: map,
+                                        },
+                                        {
+                                            task: http://share/standardNameSplitter/,
+                                            "args: [
+                                                "${last}",
+                                                true
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "given": {
+                            "type": "string"  
+                            "_mapping": {
+                                "arxiv": {
+                                    "from": "feed.entry.author.name",
+                                    "pipeline": [
+                                        "http://share/standardNameSplitter/?last",
+                                  },
+                                }
+                            }
+                        }
+                    }
+                }]
+            }
+        }
+    },
+}
+  TASKS -> 
+SOURCES -> MAPPINGS
+    -> DATATYPES ^
+DashboardSchema.json
+    The dashboard product shall have data. That data shall have the following format:
+        title is required
+        "date is not required
+        authors in the fml format are requied
+
+SHARE.json
+    datacite:"title"
+    dryad:"authors"
+
+
+mappings.json
+{
+    "sources": [ 
+        {
+            "schema": "https://github.com/share-research/api-schemas/arxiv.json",
+            "label": "arxiv",
+        }
+    ],
+    properties: {
+        output: share://shareSchema.json,
+        title: {}
+            contributors: 
+                family:
+                given:
+}
+
+
+// arxiv.mappingtypes.json
+{
+    source: "https://github.com/share-research/api-schemas/arxiv.json",
+    types: 
+        feed.entry.author.name: http://github.com/share-research/types/fml.json,
+}
+
+
+//
+
+{
+    "id": "https://github.com/share-research/api-schemas/arxiv.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "arXiv Work",
+    "description": "The arXiv API format for a single work",
+    "required": [],
+    "type": "object",
+    "properties": {
+        "feed": {
+            "type": "object",
+            "description": "TODO.",
+            "properties": {
+                "-xmlns": {
+                    "type": "string",
+                    "description": "TODO."
+                },
+                "-xmlns:opensearch": {
+                    "type": "string",
+                    "description": "TODO."
+                },
+                "-xmlns:arxiv": {
+                    "type": "string",
+                    "description": "TODO."
+                },
+                "link": {
+                    "type": "object",
+                    "description": "TODO.",
+                    "properties": {
+                        "-xlmns": {
+                            "type": "string",
+                            "description": "TODO."
+                        },
+                        "-href": {
+                            "type": "string",
+                            "description": "TODO."
+                        },
+                        "-rel": {
+                            "type": "string",
+                            "description": "TODO."
+                        },
+                        "-type": {
+                            "type": "string",
+                            "description": "TODO."
+                        }
+                    }
+                },
+                "title": {
+                    "type": "object",
+                    "description": "TODO.",
+                    "properties": {
+                        "-xmlns": {
+                            "type": "string",
+                            "description": "TODO."
+                        },
+                        "#text": {
+                            "type": "string",
+                            "description": "TODO."
+                        }
+                    }
+                },

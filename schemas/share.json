@@ -19,75 +19,14 @@
                     "string"
                 ]
             },
-	    "creators":{
-		"type":"object",
-		"creator":{
-		    "type":"object",
-		    "creatorName":{
-			"type":"string"
-		    },
-		    "givenName":{
-			"type":"string"
-		    },
-		    "familyName":{
-			"type":"string"
-		    },
-		    "nameIdentifier":{
-			"type":"object",
-			"-schemeURI":{
-			    "type":"string"
-			},
-			"-nameIdentifierScheme":{
-			    "type":"string"
-               },
-			"#text":{
-			    "type":"string"
-			}
-		    },
-		    "affiliation":{
-			"type":"string"
-		    }
-		}
-	    },
-	    "titles":{
-		"type":"object",
-		"title":[
-		    {
-			"-xml:lang":{
-			    "type":"string"
-			},
-			"#text":{
-			    "type":"string"
-			}
-		    },
-		    {
-			"-xml:lang":{
-			    "type":"string"
-			},
-			"-titleType":{
-			    "type":"string"
-			},
-			"#text":{
-			    "type":"string"
-			}
-		    }
-		]
-	    },
-	    "descriptions":{
-		"type":"object",
-		"description":{
-		    "type":"object",
-		    "-xml:lang":{
-			"type":"string"
-		    },
-		    "-descriptionType":{
-			"type":"string"
-		    },
-		    "#text":{
-			"type":"string"
-		    }
-		}
-	    },
+            "title": {
+                "type": "string",
+                "description": "Text"
+            },
+            "description": {
+                "type": "string",
+                "description": "Text"
+            },
             "is_deleted": {
                 "type": "boolean",
                 "description": "Boolean (Either True or False)"
@@ -291,39 +230,33 @@
                     }
                 }
             },
-	    "relatedIdentifiers":{
-		"type":"object",
-		"relatedIdentifier":[
-		    {
-			"-relatedIdentifierType":{
-			    "type":"string"
-			},
-			"-relationType":{
-			    "type":"string"
-			},
-			"-relatedMetadataScheme":{
-			    "type":"string"
-			},
-			"-schemeURI":{
-			    "type":"string"
-			},
-			"#text":{
-			    "type":"string"
-			}
-		    },
-		    {
-			"-relatedIdentifierType":{
-			    "type":"string"
-			},
-			"-relationType":{
-			    "type":"string"
-			},
-			"#text":{
-			    "type":"string"
-			}
-		    }
-		]
-	    }
+            "identifiers": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "description": "",
+                    "required": [
+                        "@id",
+                        "@type"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                        "@id": {
+                            "type": [
+                                "string",
+                                "integer"
+                            ]
+                        },
+                        "@type": {
+                            "enum": [
+                                "WORKIDENTIFIER",
+                                "WorkIdentifier",
+                                "workidentifier"
+                            ]
+                        }
+                    }
+                }
+            }
         }
     }
 }
